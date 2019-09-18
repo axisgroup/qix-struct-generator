@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./dist/css/style.css"/>
+    </head>
+    <body>
+        <div id="header">
+            <img id="logo" src="./dist/img/axislogo_4x.png"/>
+            <div class="page-title">Qix Structure Generator</div>
+            <div id="qix-version">
+                <select>
+                        <option>3.1</option>
+                </select>
+            </div>
+        </div>
+        <div id="container">
+            <div id = "content">
+                <div id="col1">
+                    <div class="tile">
+                        <div class="tile-header"><select id="structure"></select></div>
+                        <div class="tile-content" id="struct-table"></div>
+                    </div>
+                </div>
+                <div id="col2">
+                    <div class="tile" id="prop-desc-tile">
+                        <div class="tile-header">Property Description</div>
+                        <div class="tile-content" id="prop-desc"></div>
+                    </div>
+                    <div class="tile">
+                        <div class="tile-header">
+                            JSON Output
+                            <div id="copy-btn">Copy to Clipboard</div>
+                        </div>
+                        <div class="tile-content json-content"><pre id="json"></pre></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src = "./dist/js/bundle.js"></script>
+    </body>
+    
+</html>
